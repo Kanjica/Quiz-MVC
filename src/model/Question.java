@@ -2,37 +2,37 @@ package model;
 
 import java.util.List;
 
-public class Pergunta {
+public class Question {
     private String tema;
-    private Dificuldade nivel;
+    private Difficulty nivel;
     private String enunciado;
     private List<String> alternativas;
     private int indiceRespostaCorreta;
-    private Tipo tipo;
+    private Category category;
 
-    public Pergunta(String tema, String subtema, Dificuldade nivel, String enunciado, List<String> alternativas, int indiceRespostaCorreta) {
+    public Question(String tema, String subtema, Difficulty nivel, String enunciado, List<String> alternativas, int indiceRespostaCorreta) {
         this.tema = tema;
         this.nivel = nivel;
         this.enunciado = enunciado;
         this.alternativas = alternativas;
         this.indiceRespostaCorreta = indiceRespostaCorreta;
-        this.tipo = null;
+        this.category = null;
     }
     
-    public Pergunta(String tema, String subtema, Dificuldade nivel, String enunciado, List<String> alternativas, int indiceRespostaCorreta, String personalidade, Tipo tipo) {
+    public Question(String tema, String subtema, Difficulty nivel, String enunciado, List<String> alternativas, int indiceRespostaCorreta, String personalidade, Category category) {
         this.tema = tema;
         this.nivel = nivel;
         this.enunciado = enunciado;
         this.alternativas = alternativas;
         this.indiceRespostaCorreta = indiceRespostaCorreta;
-        this.tipo = tipo;
+        this.category = category;
     }
 
     public String getTema() {
         return tema;
     }
     
-    public Dificuldade getNivel() {
+    public Difficulty getNivel() {
     	return nivel;
     }
     
@@ -48,8 +48,8 @@ public class Pergunta {
         return indiceRespostaCorreta;
     }
 
-    public Tipo getTipo() {
-    	return tipo;
+    public Category getTipo() {
+    	return category;
     }
     
     public boolean isRespostaCorreta(int indiceEscolhido) {
@@ -60,7 +60,7 @@ public class Pergunta {
 	public String toString() {
 		return "Pergunta [tema=" + tema  + ", nivel=" + nivel + ", enunciado=" + enunciado
 				+ ", alternativas=" + alternativas + ", indiceRespostaCorreta=" + indiceRespostaCorreta
-				 + ", tipo=" + tipo + "]";
+				 + ", tipo=" + category + "]";
 	}
     
 }

@@ -1,5 +1,9 @@
 package view;
 
-public class QuizView {
+import controller.QuizController;
 
+public class QuizView {
+	private QuizController controller;
+	
+	public QuizView() {}
 }

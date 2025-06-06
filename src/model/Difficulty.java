@@ -1,6 +1,6 @@
 package model;
 
-public enum Dificuldade{
+public enum Difficulty{
     FACIL(2.0),
     MEDIO(5.0),
     DIFICIL(8.0),
@@ -8,7 +8,7 @@ public enum Dificuldade{
 	
     private final double valor;
 
-    Dificuldade(double valor){
+    Difficulty(double valor){
         this.valor = valor;
     }
 

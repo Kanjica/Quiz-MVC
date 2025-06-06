@@ -3,8 +3,15 @@ package controller;
 import javax.swing.JFrame;
 
 public class MainController {
-	 JFrame mainframe;
+	 private JFrame mainframe;
+	 private InitialScreenController inicialController;
+	 private GameModesController modosController;
+	 private ThemeSelectionController selecaoController;
+	 private QuizController quizController;
+	 private ResultsController resultsController;
 	 
-	 public MainController() {}
+	 public MainController() {
+		 
+	 }
 	 
 }

@@ -1,5 +1,7 @@
 package view;
 
-public class BackgroundPanel {
+import javax.swing.JPanel;
+
+public class BackgroundPanel extends JPanel{
 
 }
